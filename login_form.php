@@ -47,7 +47,7 @@
 						<span class="forgetpassword"><a href="forget_password.php"> Forget your Password ?</a></span></td>
 
 					</tr>
-					<td><a href="register_form.php"> Resiter now</a></td>
+					<td><a href="register_form.php"> Register now</a></td>
 					<tr>
 						<td><hr style="background-color:blue;height:1px;margin:0px;"/></td>
 					</tr>
