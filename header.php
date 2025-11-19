@@ -74,35 +74,17 @@
                     <a href="./index.php"><img src="img/logo.png" alt="Logo"></a>
                 </div> 
             </div>
-            <?php
-            $currentPage = basename($_SERVER['PHP_SELF']);
-            ?>
             <div class="col-lg-9 col-md-9">
                 <nav class="header__menu mobile-menu">
                     <ul>
-                        <li class="<?php echo ($currentPage == 'index.php') ? 'active' : ''; ?>"><a href="./index.php">Trang chủ</a></li>
-                        <li class="<?php echo ($currentPage == 'allmovie.php') ? 'active' : ''; ?>"><a href="allmovie.php">Tất cả phim</a></li>
-                        <li class="<?php echo ($currentPage == 'about.php') ? 'active' : ''; ?>"><a href="about.php">Về chúng tôi</a></li>
-                        <li class="<?php echo ($currentPage == 'feedback.php') ? 'active' : ''; ?>"><a href="./feedback.php">Phản hồi</a></li>
-                        <li class="<?php echo ($currentPage == 'contact.php') ? 'active' : ''; ?>"><a href="./contact.php">Liên hệ</a></li>
+                        <li><a href="./index.php">Trang chủ</a></li>
+                        <li><a href="allmovie.php">Tất cả phim</a></li>
+                        <li><a href="about.php">Về chúng tôi</a></li>
+                        <li><a href="./feedback.php">Phản hồi</a></li>
+                        <li><a href="./contact.php">Liên hệ</a></li>
                     </ul>
                 </nav>
             </div>
-
-            <style>
-            .header__menu ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 18px; }
-            .header__menu a { color: inherit; text-decoration: none; padding: 6px 2px; display: inline-block; transition: color .18s ease, transform .12s ease; }
-            .header__menu li.active > a {
-                border-bottom: 3px solid #ff6b6b;
-                padding-bottom: 4px;
-                color: #ff6b6b;
-            }
-            .header__menu a:active { transform: translateY(1px); }
-            .header__menu a:hover { color: #ff6b6b; }
-            @media(max-width: 767px) {
-                .header__menu ul { flex-direction: column; gap: 10px; }
-            }
-            </style>
             
         </div>
         <div class="canvas__open"><i class="fa fa-bars"></i></div>
